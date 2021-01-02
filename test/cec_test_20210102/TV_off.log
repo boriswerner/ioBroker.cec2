@@ -1,0 +1,38 @@
+2021-01-02 14:02:16.991  - [34mdebug[39m: cec2.1 (4051) TRAFFIC: [          364515]	>> 0f:a0:00:80:45:20:01:10
+2021-01-02 14:02:16.992  - [34mdebug[39m: cec2.1 (4051) DEBUG:   [          364515]	TV (0): power status changed from 'on' to 'standby'
+2021-01-02 14:02:16.993  - [34mdebug[39m: cec2.1 (4051) DEBUG:   [          364515]	>> TV (0) -> Broadcast (F): vendor command with id (A0)
+2021-01-02 14:02:17.125  - [34mdebug[39m: cec2.1 (4051) TRAFFIC: [          364649]	>> 0f:36
+2021-01-02 14:02:17.129  - [34mdebug[39m: cec2.1 (4051) DEBUG:   [          364649]	>> TV (0) -> Broadcast (F): standby (36)
+2021-01-02 14:02:17.622  - [34mdebug[39m: cec2.1 (4051) TRAFFIC: [          365146]	<< 10:8f
+2021-01-02 14:02:17.745  - [34mdebug[39m: cec2.1 (4051) TRAFFIC: [          365269]	>> 0f:36
+2021-01-02 14:02:18.626  - [34mdebug[39m: cec2.1 (4051) DEBUG:   [          366150]	command 'give device power status' timeout
+2021-01-02 14:02:19.127  - [34mdebug[39m: cec2.1 (4051) TRAFFIC: [          366650]	>> 08:90:03
+2021-01-02 14:02:19.128  - [34mdebug[39m: cec2.1 (4051) ============================ Processing Event: REPORT_POWER_STATUS: {"type":"TRAFFIC","number":"366650","flow":"IN","source":0,"target":8,"opcode":144,"args":[3],"event":"REPORT_POWER_STATUS","data":{"val":3,"str":"IN_TRANSITION_ON_TO_STANDBY"}}
+2021-01-02 14:02:19.129  - [34mdebug[39m: cec2.1 (4051) Parsing data...
+2021-01-02 14:02:19.130  - [34mdebug[39m: cec2.1 (4051) DEBUG:   [          366650]	TV (0): power status changed from 'standby' to 'in transition from on to standby'
+2021-01-02 14:02:19.131  - [34mdebug[39m: cec2.1 (4051) TRAFFIC: [          366650]	>> 5f:72:00
+2021-01-02 14:02:19.131  - [34mdebug[39m: cec2.1 (4051) DEBUG:   [          366650]	>> Audio (5): system audio mode status changed from on to off
+2021-01-02 14:02:19.132  - [34mdebug[39m: cec2.1 (4051) DEBUG:   [          366651]	>> TV (0) -> Playback 2 (8): report power status (90)
+2021-01-02 14:02:19.133  - [34mdebug[39m: cec2.1 (4051) DEBUG:   [          366651]	>> Audio (5) -> Broadcast (F): set system audio mode (72)
+2021-01-02 14:02:19.133  - [34mdebug[39m: cec2.1 (4051) TV Power is IN_TRANSITION_ON_TO_STANDBY
+2021-01-02 14:02:19.140  - [34mdebug[39m: cec2.1 (4051) Updating TV.state to false
+2021-01-02 14:02:19.141  - [34mdebug[39m: cec2.1 (4051) State state already created in TV
+2021-01-02 14:02:19.246  - [34mdebug[39m: cec2.1 (4051) TRAFFIC: [          366770]	>> 0f:a0:00:80:45:20:01:10
+2021-01-02 14:02:19.248  - [34mdebug[39m: cec2.1 (4051) DEBUG:   [          366770]	TV (0): power status changed from 'in transition from on to standby' to 'standby'
+2021-01-02 14:02:19.248  - [34mdebug[39m: cec2.1 (4051) DEBUG:   [          366770]	>> TV (0) -> Broadcast (F): vendor command with id (A0)
+2021-01-02 14:02:19.496  - [34mdebug[39m: cec2.1 (4051) TRAFFIC: [          367020]	>> 5f:72:00
+2021-01-02 14:02:19.497  - [34mdebug[39m: cec2.1 (4051) DEBUG:   [          367020]	>> Audio (5) -> Broadcast (F): set system audio mode (72)
+2021-01-02 14:02:22.505  - [34mdebug[39m: cec2.1 (4051) TRAFFIC: [          370028]	>> 5f:72:00
+2021-01-02 14:02:22.506  - [34mdebug[39m: cec2.1 (4051) DEBUG:   [          370029]	>> Audio (5) -> Broadcast (F): set system audio mode (72)
+2021-01-02 14:02:49.151  - [34mdebug[39m: cec2.1 (4051) TRAFFIC: [          396675]	<< 10:8f
+2021-01-02 14:02:50.151  - [34mdebug[39m: cec2.1 (4051) DEBUG:   [          397675]	command 'give device power status' timeout
+2021-01-02 14:02:52.138  - [34mdebug[39m: cec2.1 (4051) TV did not answer to powerRequest: Error: CEC monitor hasn't gotten response in some time (3000 ms) from 0 - Error: CEC monitor hasn't gotten response in some time (3000 ms) from 0
+    at Timeout._onTimeout (/opt/iobroker/node_modules/@senzil/cec-monitor/lib/cec-monitor.js:447:21)
+    at listOnTimeout (internal/timers.js:554:17)
+    at processTimers (internal/timers.js:497:7)
+2021-01-02 14:03:22.178  - [34mdebug[39m: cec2.1 (4051) TRAFFIC: [          429702]	<< 10:8f
+2021-01-02 14:03:23.178  - [34mdebug[39m: cec2.1 (4051) DEBUG:   [          430702]	command 'give device power status' timeout
+2021-01-02 14:03:25.142  - [34mdebug[39m: cec2.1 (4051) TV did not answer to powerRequest: Error: CEC monitor hasn't gotten response in some time (3000 ms) from 0 - Error: CEC monitor hasn't gotten response in some time (3000 ms) from 0
+    at Timeout._onTimeout (/opt/iobroker/node_modules/@senzil/cec-monitor/lib/cec-monitor.js:447:21)
+    at listOnTimeout (internal/timers.js:554:17)
+    at processTimers (internal/timers.js:497:7)
